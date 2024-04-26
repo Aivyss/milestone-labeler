@@ -1,0 +1,22 @@
+name: 'milestone labeler'
+description: 'milestone labeler'
+inputs:
+  github_token:
+    description: 'github token'
+    required: true
+    default: ''
+  label:
+    description: 'label'
+    required: true
+    default: ''
+  page:
+    description: 'pagination'
+    required: false
+    default: 1
+  per_page:
+    description: 'pagination'
+    required: true
+    default: 100
+runs:
+  using: 'node20'
+  main: 'src/index.js'
